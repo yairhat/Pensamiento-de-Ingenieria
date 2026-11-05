@@ -1,1 +1,138 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi portafolio | Pensamiento de Ingeniería</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6fa;
+      color: #1c293b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #142b49;
+      color: white;
+      padding: 55px 20px;
+      text-align: center;
+    }
+
+    header h1 { margin: 0 0 10px; }
+
+    header p {
+      margin: 0;
+      color: #d6e2f0;
+    }
+
+    main {
+      max-width: 950px;
+      margin: 45px auto;
+      padding: 0 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e1e6ee;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.04);
+    }
+
+    .number {
+      color: #3974b8;
+      font-weight: bold;
+    }
+
+    .card h3 { margin: 12px 0; }
+
+    .card p {
+      color: #58677a;
+      font-size: 14px;
+      min-height: 70px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: #215c9b;
+      color: white;
+      text-decoration: none;
+      border-radius: 7px;
+    }
+
+    .card a:hover { background: #174674; }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #66758a;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Mi portafolio académico</h1>
+    <p>Pensamiento de Ingeniería | 2026</p>
+    <p>Héctor Yair Ávila Tenorio</p>
+  </header>
+
+  <main>
+    <h2>Mis actividades</h2>
+    <p>Trabajos y ejercicios desarrollados durante el curso.</p>
+
+    <div class="projects">
+
+      <article class="card">
+        <span class="number">Actividad 01</span>
+        <h3>Simulación de Monte Carlo</h3>
+        <p>Archivo de código Python correspondiente
+        al ejercicio de Monte Carlo.</p>
+        <a href="https://github.com/yairhat/Pensamiento-de-Ingenieria/blob/main/montecarlo.py">
+          Ver código
+        </a>
+      </article>
+
+      <article class="card">
+        <span class="number">Actividad 02</span>
+        <h3>Grafos del Metro</h3>
+        <p>Proyecto en Python relacionado con
+        grafos y el sistema del Metro.</p>
+        <a href="https://github.com/yairhat/Pensamiento-de-Ingenieria/blob/main/grafo_metro.py">
+          Ver código
+        </a>
+      </article>
+
+      <article class="card">
+        <span class="number">Actividad 03</span>
+        <h3>Definición de un problema</h3>
+        <p>Análisis sistémico de las fallas e
+        interrupciones de la Línea 9 del Metro.</p>
+        <a href="https://yairhat.github.io/Pensamiento-de-Ingenieria/">
+          Ver investigación
+        </a>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    Pensamiento de Ingeniería · Portafolio académico 2026
+  </footer>
+</body>
+</html>
+
